@@ -1,5 +1,5 @@
 {% set name = "xvega-bindings" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xvega-bindings/archive/{{ version }}.tar.gz
-  sha256: a762f4f4b8e8998dfd4bc6fd18892f6cc376a18b3d44a6448e15c3df243d216a
+  sha256: cf1c6ef0aab4935a9adda7915a22b2907a3ec943f544993f4364cc8c70c8f885
 
 build:
   number: 0
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'xvega bindings for xeus'
+  summary: xvega bindings for xeus
   doc_url: https://xeus-sqlite.readthedocs.io/en/latest/xvega_magic.html
 
 extra:
