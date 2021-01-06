@@ -1,5 +1,5 @@
 {% set name = "xvega-bindings" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xvega-bindings/archive/{{ version }}.tar.gz
-  sha256: 09ca063c9075c12d17294d5a813947da2077dfc74b7890e228b988f7cf0cba42
+  sha256: 931853bc220c9b8dfc600a84a2bbcd12511da41f810dbe37e2d686f632dcce41
 
 build:
   number: 0
