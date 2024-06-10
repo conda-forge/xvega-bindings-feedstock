@@ -1,5 +1,5 @@
 {% set name = "xvega-bindings" %}
-{% set version = "0.0.10" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,23 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xvega-bindings/archive/{{ version }}.tar.gz
-  sha256: 466d276cf2377c6a456d32ec824410be92d36408b96af86543a6cffef89f79fc
+  sha256: 0929eadf383971c32dbda67379c1cadddf232af70dca5584526b2c211c8876b7
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - cmake
     - make  # [unix]
   host:
-    - nlohmann_json
-    - xtl
-    - xvega >=0.0.9
-    - xproperty
+    - nlohmann_json =3.11.3
+    - xvega >=0.1.0,<0.2
+  run:
+    - {{ pin_compatible('nlohmann_json', max_pin='x.x.x') }}
+    - {{ pin_compatible('xvega', max_pin='x.x') }}
 
 test:
   commands:
