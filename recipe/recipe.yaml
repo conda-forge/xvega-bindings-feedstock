@@ -1,5 +1,5 @@
 context:
-  version: "0.1.1"
+  version: "0.1.2"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xvega-bindings/archive/${{ version }}.tar.gz
-  sha256: 8f220236025d92486081c7012c74d60462506426c45d811fcae29068e8b294b0
+  sha256: 3c60b64587e8c0bdd57579724c875115d7b08efdb7948b3fc4907b3e39aeed31
 
 build:
   number: ${{ build_number }}
